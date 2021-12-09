@@ -1,5 +1,3 @@
-
-
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +12,7 @@ body {
 header {
   font-size: 2rem;
 }
-header h1{
+header h1 {
   text-shadow: 0 1rem 2rem rgb(8, 0, 0);
 }
 header,
@@ -23,11 +21,10 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2rem 4rem black ;
+  box-shadow: 0 2rem 4rem black;
 }
 form input,
 form button {
-  
   padding: 0.5rem;
   font-size: 2rem;
   border: none;
@@ -117,11 +114,12 @@ select {
 /* Custom Select */
 .select {
   margin: 1rem;
+  font-size: 1rem;
   position: relative;
   overflow: hidden;
-  
 }
 select {
+  font-size: 1rem;
   color: rgb(80, 64, 64);
   font-family: "Poppins", sans-serif;
   cursor: pointer;
@@ -129,6 +127,7 @@ select {
 }
 /* Arrow */
 .select::after {
+  font-size: 1rem;
   content: "\25BC";
   position: absolute;
   top: 0;
@@ -144,3 +143,73 @@ select {
   transform: scale(1.5);
 }
 */
+@media (max-width: 450px) {
+  html {
+    font-size: 30%;
+  }
+
+  header,
+  form {
+    min-height: 20vh;
+    width: auto;
+  }
+  form input,
+  form button {
+    padding: 0.1rem;
+    font-size: 1rem;
+    border: none;
+    background: rgb(145, 107, 107);
+  }
+  form button {
+    color: rgb(80, 64, 64);
+    background: #f7fffe;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form button:hover {
+    background: rgb(80, 64, 64);
+    color: white;
+  }
+  .select {
+    margin: .5rem;
+    font-size: .5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  select {
+    font-size: .5rem;
+    color: rgb(80, 64, 64);
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 6rem;
+    height: 1rem;
+  }
+  /* Arrow */
+  .select::after {
+    font-size: .6rem;
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0rem;
+    background: rgb(80, 64, 64);
+    cursor: pointer;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (max-width: 370px) {
+  html {
+    font-size: 10%;
+  }
+}
+@media (max-width: 660px) {
+  html {
+    font-size: 75%;
+  }
+}
