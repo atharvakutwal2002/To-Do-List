@@ -25,6 +25,7 @@ form {
 }
 form input,
 form button {
+  color: #f7fffe;
   padding: 0.5rem;
   font-size: 2rem;
   border: none;
